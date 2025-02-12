@@ -22,3 +22,4 @@ salt=cv2.imread("opencv-assets-main\salt and pepper grains.jpeg")
 grains=cv2.medianBlur(salt,5)
 cv2.imshow("grains",grains)
 cv2.waitKey(0)
+# try out these blurs and addition & subtraction on different images!
