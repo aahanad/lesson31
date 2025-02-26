@@ -33,9 +33,30 @@ peeps=cv2.imread("opencv-assets-main\people.jpeg")
 upsidedown=cv2.rotate(peeps,cv2.ROTATE_180)
 cv2.imshow("upsidedown",upsidedown)
 cv2.waitKey(0)
-pika=cv2.imread("opencv-assets-main\pika.png")
-lines=cv2.Canny(pika,100,200)
+#pika=cv2.imread("opencv-assets-main\sea goddess.PNG")
+#lines=cv2.Canny(pika,50,)
+#cv2.imshow("lines",lines)
+#cv2.waitKey(0)
+
+
+
+
+
+bow=cv2.imread("opencv-assets-main\Rainbow.PNG")
+g_blur=cv2.GaussianBlur(bow,(31,31),sigmaX=0,sigmaY=0)
+cv2.imshow("g_blur",g_blur)
+cv2.waitKey(0)
+b_blur=cv2.bilateralFilter(bow,21,sigmaColor=51.5,sigmaSpace=7.7)
+cv2.imshow("b_blur",b_blur)
+cv2.waitKey(0)
+hsv=cv2.cvtColor(bow,cv2.COLOR_BGR2RGB)
+cv2.imshow("hsv",hsv)
+cv2.waitKey(0)
+upsidedown=cv2.rotate(bow,cv2.ROTATE_180)
+cv2.imshow("upsidedown",upsidedown)
+cv2.waitKey(0)
+lines=cv2.Canny(bow,100,200)
 cv2.imshow("lines",lines)
 cv2.waitKey(0)
-# try all the functions on one image
+
 
